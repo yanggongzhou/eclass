@@ -1,5 +1,9 @@
 //app.js
 App({
+  //错误信息配置
+  onError(msg) {
+    console.log(msg)
+  },
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []

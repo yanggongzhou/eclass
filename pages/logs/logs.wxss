@@ -6,3 +6,47 @@
 .log-item {
   margin: 10rpx;
 }
+page {
+    background-color: #fff;
+    color: #333;
+    font-size: 28rpx;
+}
+page::before {
+    /* 顶部分割线 */
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #f6f8fc;
+    z-index: 9999;
+}
+page::after {
+    /* 底部分割线 */
+    content: "";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #f6f8fc;
+    z-index: 9999;
+}
+.left{
+  float:left;
+}
+.right{
+  float: right;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.center{
+  text-align: center;
+}

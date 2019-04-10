@@ -1,16 +1,18 @@
 //index.js
-//获取应用实例
+//获取全局应用实例
 const app = getApp()
+const com = require('../common/common.js')
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: com.hello,
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
-  bindViewTap: function() {
+  bindViewTap: function(event) {
+    console.log(event)
     wx.navigateTo({
       url: '../logs/logs'
     })

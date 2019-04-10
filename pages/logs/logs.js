@@ -1,4 +1,4 @@
-//logs.js
+//logs.js获取util.js的应用实例
 const util = require('../../utils/util.js')
 
 Page({
