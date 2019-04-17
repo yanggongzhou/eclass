@@ -1,0 +1,10 @@
+// 模块语法--小程序脚本--可以被其他的 .wxs 文件 或 WXML 中的 <wxs> 标签引用。
+var foo = "wxs模板语法，呵了";
+var bar = function (d) {
+  return d;
+}
+//
+module.exports = {
+  foo: foo,
+  bar: bar
+};

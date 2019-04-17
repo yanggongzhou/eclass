@@ -1,0 +1,4 @@
+<!-- 模板 -->
+<template name="comm_temp">
+    <text>template-模板</text>
+</template>

@@ -5,7 +5,17 @@
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-       <text>test</text>
+      <text>test1121211</text>
+      <view wx:for="{{[1, 2, 3]}}" wx:key="{{index}}">{{index}}:{{item}}</view>
+      <!-- 模板 -->
+      <import src="../common/common.wxml" />
+      <template is="comm_temp"/>
+      <!-- 模块 -->
+      <wxs src="../common/common.wxs" module="comm_wxs"/>
+      <view>{{comm_wxs.bar(comm_wxs.foo)}}</view>
+      <view>
+        <!-- <button bindtap='testSwitchTab'>tabBar跳转</button> -->
+      </view>
     </block>
   </view>
   <view class="usermotto">

@@ -1,7 +1,6 @@
 //index.js
-//获取全局应用实例
-const app = getApp()
-const com = require('../common/common.js')
+const app = getApp()//获取全局应用实例
+const com = require('../common/common.js')//获取common.js的方法、参数
 
 Page({
   data: {
@@ -11,9 +10,9 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
-  bindViewTap: function(event) {
-    console.log(event)
+  bindViewTap() {
     wx.navigateTo({
+      //加载新页面logs
       url: '../logs/logs'
     })
   },
@@ -33,7 +32,7 @@ Page({
         })
       }
     } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
+      // 在没有 open-type=getUserInfo 版本的兼容处理,获取用户信息
       wx.getUserInfo({
         success: res => {
           app.globalData.userInfo = res.userInfo

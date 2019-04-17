@@ -1,3 +1,4 @@
+
 //app.js
 App({
   //错误信息配置
@@ -5,6 +6,52 @@ App({
     console.log(msg)
   },
   onLaunch: function () {
+    // let self = this
+    // //获取屏幕像素高度px
+    // wx.getSystemInfo({
+    //   success(res) {
+    //     self.globalData.windowHeight=res.windowHeight
+    //   }
+    // })
+
+
+    // 网络情况,无网3sloding  
+    wx.getNetworkType({
+      success(res) {
+        const networkType = res.networkType
+        if (networkType === 'none') {
+          wx.showToast({
+            title: '当前无网络',
+            icon: 'loading',
+            duration: 3000
+          })
+        }
+      }
+    });
+    //监听网络状态
+    wx.onNetworkStatusChange(function (res) {
+      if (!res.isConnected) {
+        wx.showToast({
+          title: '网络已断开',
+          icon: 'loading',
+          duration: 3000,
+          complete: function () {
+            // 页面跳转404
+            // setTimeout(function () {
+            //   wx.redirectTo({
+            //     url: "/pages/404"
+            //   })
+            // }, 1000)
+          }
+        })
+      } else {
+        //隐藏模态框
+        wx.hideToast()
+      }
+    });
+
+
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
