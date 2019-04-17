@@ -1,43 +1,35 @@
+@import "weui/weui.wxss";
 /**app.wxss**/
 .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
+  width:100%;
+  min-height:1200rpx;
 } 
 page {
-    background-color: #fff;
-    color: #333;
-    font-size: 28rpx;
+  background-color: #F8F8F8;
+  font-size: 16px;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
 }
 page::before {
-    /* 顶部分割线 */
-    content: "";
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #f6f8fc;
-    z-index: 9999;
+  /* 顶部分割线 */
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f6f8fc;
+  z-index: 9999;
 }
 page::after {
-    /* 底部分割线 */
-    content: "";
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #f6f8fc;
-    z-index: 9999;
-}
-image {
-    width: 100%;
-    height: 100%;
+  /* 底部分割线 */
+  content: "";
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f6f8fc;
+  z-index: 9999;
 }
 .left{
   float:left;

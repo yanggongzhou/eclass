@@ -1,0 +1,9 @@
+/* pages/login/login.wxss */
+.login {
+  min-height: 100%;
+  padding-top: 200rpx
+}
+.login-img{
+  width:600rpx;
+  height:88rpx;
+}
