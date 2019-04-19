@@ -1,13 +1,60 @@
 {
-  "pages":[
-    "pages/login/login",
+  "pages": [
+   
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/person/person",
+    "pages/person/clock/clock",
+    "pages/person/card/card",
+    "pages/person/log/log",
+    "pages/person/aboutus/aboutus",
+
+    "pages/message/message",
+    "pages/homework/homework",
+    "pages/equip/equip",
+    "pages/login/login"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#3385ff",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "img/homedefault.png",
+        "selectedIconPath": "img/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "img/msgdefault.png",
+        "selectedIconPath": "img/msg.png",
+        "text": "消息通知"
+      },
+      {
+        "pagePath": "pages/homework/homework",
+        "iconPath": "img/homeworkdefault.png",
+        "selectedIconPath": "img/homework.png",
+        "text": "布置作业"
+      },
+      {
+        "pagePath": "pages/equip/equip",
+        "iconPath": "img/equipdefault.png",
+        "selectedIconPath": "img/equip.png",
+        "text": "设备管理"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "img/persondefault.png",
+        "selectedIconPath": "img/person.png",
+        "text": "个人空间"
+      }
+    ]
   }
 }

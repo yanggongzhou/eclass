@@ -48,3 +48,9 @@ page::after {
 .center{
   text-align:center;
 }
+.w100{
+  width: 100%;
+}
+.h100{
+  height: 100%;
+}

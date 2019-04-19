@@ -64,27 +64,18 @@ Page({
   onShareAppMessage: function () {
 
   },
-  //提示信息
-  showTopTips: function () {
-    var that = this;
-    this.setData({
-      showTopTips: true
-    });
-    setTimeout(function () {
-      that.setData({
-        showTopTips: false
-      });
-    }, 3000);
-  },
   //提交登录信息
   signIn(){
     let self = this;
-    requestServers.login({
-      username:this.data.username,
-      password:this.data.password
-    }).then((res)=>{
-      console.log("接口数据："+res);
+    wx.switchTab({
+      url:'../index/index'
     })
+    // requestServers.login({
+    //   username:this.data.username,
+    //   password:this.data.password
+    // }).then((res)=>{
+    //   console.log("接口数据："+res);
+    // })
   },
   //用户名密码
   bindusernameInput(e) {
@@ -96,5 +87,5 @@ Page({
     this.setData({
       password: e.detail.value
     })
-  }
+  },
 })

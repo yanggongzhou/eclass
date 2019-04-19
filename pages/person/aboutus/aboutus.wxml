@@ -1,0 +1,27 @@
+<!--pages/person/aboutus/index.wxml-->
+<view class="companyimg">
+  <image class="companylogo" src="../../../img/company/logo.png"></image>
+</view>
+<view class="weui-article">
+ <view class="title">公司简介</view>
+    <view class="weui-article__p">
+      <image class="w100" src='../../../img/company/about1.jpg'></image>
+    </view>
+   <view class="weui-article__p"> 北京中教美育科技有限公司成立于2006年，是一家专业从事教育技术研究并提供创新素质教育系统平台综合解决方案的企业，公司以雄厚的技术实力为教育改革及教育现代化提供咨询、规划及实施服务。公司响应教育部推进国家教育信息化战略，以助力建设“三通两平台”为着力点，将当今云计算、大数据、物联网、互联网思维等先进的技术及理念应用在教育教学平台及应用中。
+    </view>
+     <view class="title">新闻媒体</view>
+    <view class="weui-article__p">
+      <image class="w100" src='../../../img/company/about2.png'></image>
+    </view>
+    <view class="weui-article__p">
+      创新驱动教育装备现代化，第二十七届北京教育装备展示会（BEEE2016）于今天在北京展览馆盛大落幕。在这三天展会中，中教美育展出的智慧教育平台产品、机器人创客实验室、信息系统集成解决方案等均受到了参会人员的广泛关注！
+    </view>
+</view>
+
+
+<view class="weui-footer footer">
+  <view class="weui-footer__links">
+    <view bindtap="knowMore" class="weui-footer__link">了解更多>></view>
+  </view>
+  <view class="weui-footer__text">Copyright © 北京青湖科技有限公司</view>
+</view>

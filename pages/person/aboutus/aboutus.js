@@ -1,4 +1,4 @@
-// pages/myself/index.js
+// pages/person/aboutus/index.js
 Page({
 
   /**
@@ -62,5 +62,17 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  //了解更多
+  knowMore(){
+    wx.showModal({
+      content: '想了解更多关于中教美育信息，请用浏览器输入以下网址：http://www.bjzjmy.com',
+      showCancel: false,
+      success: function (res) {
+        if (res.confirm) {
+          // console.log('用户点击确定')
+        }
+      }
+    });
   }
 })

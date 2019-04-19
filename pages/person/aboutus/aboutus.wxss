@@ -1,0 +1,18 @@
+/* pages/person/aboutus/index.wxss */
+.companyimg{
+  text-align: center;
+  margin-top: 30rpx;
+}
+.companylogo{
+  width:250rpx;
+  height:80rpx;
+}
+.title{
+  text-align:center;
+  font-size:20px;
+  font-weight:400;
+  margin-bottom: 20rpx;
+}
+.footer{
+  margin: 40rpx;
+}

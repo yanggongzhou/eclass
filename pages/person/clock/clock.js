@@ -1,4 +1,4 @@
-// pages/myself/index.js
+// pages/person/clock/index.js
 Page({
 
   /**

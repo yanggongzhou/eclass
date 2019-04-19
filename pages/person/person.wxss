@@ -1,0 +1,24 @@
+/* person */
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius:8%;
+}
+.wxUsermsg{
+  text-align: center;
+  padding:35rpx;
+}
+.userinfo-nickname {
+  color: #aaa;
+  font-size: 26rpx
+}
+.navIcon{
+  margin-right: 5px;vertical-align: middle;width:20px; height: 20px;
+}
+.aboutus{
+  margin:100rpx 0 40rpx 0;
+}
+.aboutusBtn{
+  padding:17rpx;
+  background-color:#FFF;
+}
