@@ -1,4 +1,5 @@
-/* pages/equip/index.wxss */
+/* pages/equip/equipoc/equipoc.wxss */
+
 .deviceImg{
   width:100rpx;
   height:80rpx;

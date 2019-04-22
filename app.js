@@ -49,8 +49,11 @@ App({
         wx.hideToast()
       }
     });
-
-
+    //为 tabBar 某一项的右上角添加文本
+    wx.setTabBarBadge({
+      index: 1,
+      text: '8'
+    })
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())

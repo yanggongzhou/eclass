@@ -1,0 +1,5 @@
+/* pages/equip/equipmsg/equipmsg.wxss */
+.equipmsg_page{
+  padding: 20rpx;
+ 
+}

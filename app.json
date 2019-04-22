@@ -1,7 +1,12 @@
 {
   "pages": [
-   
     "pages/index/index",
+
+    "pages/equip/equip",
+    "pages/equip/equipmsg/equipmsg",
+    "pages/equip/equipoc/equipoc",
+
+    
     "pages/person/person",
     "pages/person/clock/clock",
     "pages/person/card/card",
@@ -10,14 +15,14 @@
 
     "pages/message/message",
     "pages/homework/homework",
-    "pages/equip/equip",
+    
     "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "智慧班牌管理平台",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#6e6d6b",

@@ -1,66 +1,47 @@
-// pages/equip/index.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    equipData: [
+      {
+        id:"1",
+        label:"设备1",
+        classroom:"综合楼101",
+        state:true,
+        checked: false
+      },
+      {
+        id: "2",
+        label: "设备2",
+        classroom: "综合楼102",
+        state: true,
+        checked: true
+      },
+      {
+        id: "3",
+        label: "设备3",
+        classroom: "综合楼103",
+        state: false,
+        checked: false
+      },
+      {
+        id: "4",
+        label: "设备4",
+        classroom: "综合楼104",
+        state: true,
+        checked: true
+      },
+    ]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  
+  //查看单个设备详情页
+  checkboxClick(){
+    wx.navigateTo({
+      url: './equipmsg/equipmsg',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  //编辑
+  deviceEdit(){
+    wx.navigateTo({
+      url: './equipoc/equipoc',
+    })
   }
-})
+});

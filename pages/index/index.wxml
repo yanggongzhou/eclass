@@ -1,2 +1,23 @@
 <!--pages/myself/index.wxml-->
-<text>pages/myself/index.wxml</text>
+<view class="index-title">校园一隅</view>
+<swiper class="index-swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" 
+  indicator-active-color="{{activeColor}}">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <navigator url="" hover-class="navigator-hover">
+        <image src="{{item.url}}" class="slide-image" width="355" height="200" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<view bindtap="more" class="know-more">了解更多</view>
+
+<view  class="index-title">校园实事</view>
+<view class="index-centent">
+<view>1·一年级1班小明同学拾金不昧，受到全校的...</view>
+<view>2·家事国事天下事事事关心，风声雨声读书声...</view>
+<view>3·苟利国家生死已，期因祸福避趋之</view>
+<view>4·今年5月1号，同学们想去哪儿玩呀</view>
+<view>5·少小离家老大回，乡音不改鬓毛催</view>
+<view bindtap="more" class="know-more">了解更多</view>
+</view>

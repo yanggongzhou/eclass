@@ -12,7 +12,7 @@ Page({
   aboutusBtn() {
     wx.navigateTo({
       //加载新页面logs
-      url: './aboutus/index'
+      url: './aboutus/aboutus'
     })
   },
   onLoad: function () {

@@ -1,0 +1,34 @@
+<!--pages/equip/equipmsg/equipmsg.wxml-->
+<view class="equipmsg_page">
+  <image class="w100" src='../../../img/device.png'></image>
+  <view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">设备位置：{{equipsingledata.classroom}}</view>
+        <view class="weui-cell__ft"> 
+         <picker bindchange="bindPickerChange" value="{{index}}" range="{{classItem}}">
+            <button  bindtap="changeClass" class="weui-btn mini-btn" type="primary" size="mini">绑定教室</button>
+          </picker>
+          
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">设备状态:{{equipsingledata.state}}</view>
+        <view class="weui-cell__ft">
+          <button class="weui-btn mini-btn" bindtap="openclose" type="primary" size="mini">开关机</button>
+          </view>
+      </view>
+    </view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">设备出厂号:mosldnlnlkvsa12adf1929287</view>
+      </view>
+    </view>
+
+  </view>
+</view>

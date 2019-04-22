@@ -1,1 +1,19 @@
 /* pages/myself/index.wxss */
+.slide-image {
+  width: 100%;
+}
+.index-swiper{
+  height: 482rpx;
+}
+.index-title{
+  font-size:48rpx;
+  text-align:center;
+}
+.know-more{
+  text-align:right;
+  padding:40rpx;
+  color:blue;
+}
+.index-centent{
+  padding:20rpx
+}

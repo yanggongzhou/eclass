@@ -1,2 +1,19 @@
-<!--pages/equip/index.wxml-->
-<text>pages/equip/index.wxml</text>
+
+<!-- 编辑 -->
+<view class="deviceEdit">
+  <image bindtap="deviceEdit" class="editImg" src='../../img/edit.png'></image>
+</view>
+<view>
+  <!-- 查看详情 -->
+   <checkbox-group bindchange="checkboxClick">
+    <label class="weui-cell weui-check__label" wx:for="{{equipData}}" wx:key="index">
+      <checkbox class="weui-check" value="{{item.id}}" checked="{{item.checked}}"/>
+      <image class="deviceImg" src='../../img/device.png'></image>
+      <view class="weui-cell__bd checkBox_text center">
+        <view>{{item.label}}</view>
+        <view>{{item.classroom}}</view>
+      </view>
+      <view class="weui-cell__bd checkBox_text center">开机状态：{{item.state}}</view>
+    </label>
+  </checkbox-group>
+</view>
