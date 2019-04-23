@@ -29,9 +29,33 @@ Page({
         state: true,
         checked: true
       },
-    ]
+    ],
+    //搜索
+    inputShowed: false,
+    inputVal: ""
   },
-  
+ 
+  showInput: function () {
+    this.setData({
+      inputShowed: true
+    });
+  },
+  hideInput: function () {
+    this.setData({
+      inputVal: "",
+      inputShowed: false
+    });
+  },
+  clearInput: function () {
+    this.setData({
+      inputVal: ""
+    });
+  },
+  inputTyping: function (e) {
+    this.setData({
+      inputVal: e.detail.value
+    });
+  },
   //查看单个设备详情页
   checkboxClick(){
     wx.navigateTo({

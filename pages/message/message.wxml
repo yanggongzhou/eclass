@@ -1,7 +1,13 @@
-<!--pages/message/index.wxml-->
 <import src="../common/common.wxml" />
-<template is="fly" data="{{text: '校园通知'}}" />
+
+<view class="schoolNotice">
+  <template is="fly" data="{{text: '校园通知'}}" /> 
 
 
-<template is="fly" data="{{text: '年级通知'}}" />
+</view>
 
+ 
+<view class="schoolNotice">
+  <template is="fly" data="{{text: '班级圈'}}" />
+
+</view>

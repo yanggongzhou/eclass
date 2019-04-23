@@ -12,3 +12,12 @@
   text-align:center;
   color:#03a9f4;
 }
+
+
+.schoolNotice{
+  margin:38rpx;
+  background:#fff;
+  height:498rpx;
+  border-radius:2%;
+  box-shadow:1rpx 0rpx 7rpx #e1e1e1;
+}
