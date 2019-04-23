@@ -1,45 +1,38 @@
-// pages/myself/index.js
+// pages/student/student.js
 Page({
+
   /**
-   *页面的初始数据
+   * 页面的初始数据
    */
   data: {
-    imgUrls: [
+    works: [
       {
-        link: '/pages/index/index',
-        url: '../../img/school/1.jpg'
-      }, {
-        link: '/pages/list/list',
-        url: '../../img/school/2.jpg'
+        id: "1",
+        label: "学生作业",
+        imgUrl: "../../img/homework.png",
+        link: ""
       },
       {
-        link: '/pages/index/index',
-        url: '../../img/school/5.jpg'
-      },
-       {
-        link: '/pages/list/list',
-        url: '../../img/unit/4.jpg'
+        id: "2",
+        label: "学生详情",
+        imgUrl: "../../img/person.png",
+        link: ""
       },
       {
-        link: '/pages/index/index',
-        url: '../../img/unit/3.png'
-      }
-    ],
-  
-    indicatorDots: true, //小点
-    indicatorColor: "white",//指示点颜色
-    activeColor: "coral",//当前选中的指示点颜色
-    autoplay: true, //是否自动轮播
-    interval: 4000, //间隔时间
-    duration: 4000, //滑动时间
+        id: "3",
+        label: "成绩查询",
+        imgUrl: "../../img/chengji.png",
+        link: ""
+      },
+      {
+        id: "4",
+        label: "学生考勤",
+        imgUrl: "../../img/gate.png",
+        link: ""
+      },
+    ]
   },
-  more(){
-    wx.showToast({
-      title: 'sorry,还没码到',
-      icon: 'loading',
-      duration: 3000
-    });
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

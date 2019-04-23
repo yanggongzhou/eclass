@@ -14,7 +14,10 @@
     "pages/person/aboutus/aboutus",
 
     "pages/message/message",
+
+    "pages/student/student",
     "pages/homework/homework",
+    
     
     "pages/login/login"
   ],
@@ -43,10 +46,10 @@
         "text": "消息通知"
       },
       {
-        "pagePath": "pages/homework/homework",
+        "pagePath": "pages/student/student",
         "iconPath": "img/homeworkdefault.png",
         "selectedIconPath": "img/homework.png",
-        "text": "布置作业"
+        "text": "学生管理"
       },
       {
         "pagePath": "pages/equip/equip",
