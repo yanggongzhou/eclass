@@ -1,5 +1,7 @@
 {
   "pages": [
+
+
     "pages/index/index",
 
     "pages/equip/equip",
@@ -16,9 +18,12 @@
     "pages/message/message",
 
     "pages/student/student",
-    "pages/homework/homework",
-    
-    
+    "pages/student/studentmsg/studentmsg",
+    "pages/student/gate/gate",
+    "pages/student/score/score",
+    "pages/student/homework/homework",
+    "pages/student/link/link",
+
     "pages/login/login"
   ],
   "window": {

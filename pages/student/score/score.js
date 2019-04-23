@@ -1,43 +1,21 @@
-// pages/student/student.js
+var app = getApp();
+// pages/student/score/score.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    works: [
-      {
-        id: "1",
-        label: "学生作业",
-        imgUrl: "../../img/homework.png",
-        link: "./link/link?name=homework"
-      },
-      {
-        id: "2",
-        label: "学生详情",
-        imgUrl: "../../img/person.png",
-        link: "./link/link?name=studentmsg"
-      },
-      {
-        id: "3",
-        label: "成绩查询",
-        imgUrl: "../../img/chengji.png",
-        link: "./link/link?name=score"
-      },
-      {
-        id: "4",
-        label: "学生考勤",
-        imgUrl: "../../img/gate.png",
-        link: "./link/link?name=gate"
-      },
-    ]
+    label:""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      label: app.globalData.student_msg
+    })
   },
 
   /**

@@ -1,43 +1,41 @@
-// pages/student/student.js
+var app = getApp();
+// pages/student/homework/homework.js
+var sliderWidth = 96; // 需要设置slider的宽度，用于计算中间位置
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    works: [
-      {
-        id: "1",
-        label: "学生作业",
-        imgUrl: "../../img/homework.png",
-        link: "./link/link?name=homework"
-      },
-      {
-        id: "2",
-        label: "学生详情",
-        imgUrl: "../../img/person.png",
-        link: "./link/link?name=studentmsg"
-      },
-      {
-        id: "3",
-        label: "成绩查询",
-        imgUrl: "../../img/chengji.png",
-        link: "./link/link?name=score"
-      },
-      {
-        id: "4",
-        label: "学生考勤",
-        imgUrl: "../../img/gate.png",
-        link: "./link/link?name=gate"
-      },
-    ]
+    label: "",
+    tabs: ["已完成作业", "未完成作业","全部作业"],
+    activeIndex: 1,
+    sliderOffset: 0,
+    sliderLeft: 0
   },
-
+  tabClick: function (e) {
+    this.setData({
+      sliderOffset: e.currentTarget.offsetLeft,
+      activeIndex: e.currentTarget.id
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        that.setData({
+          sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
+          sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
+        });
+      }
+    });
 
+    this.setData({
+      label: app.globalData.student_msg
+    })
   },
 
   /**

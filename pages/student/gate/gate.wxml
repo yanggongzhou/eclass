@@ -1,0 +1,2 @@
+<!--pages/student/gate/gate.wxml-->
+<view>学生{{label}}的考勤记录</view>

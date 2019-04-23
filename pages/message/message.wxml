@@ -1,2 +1,7 @@
 <!--pages/message/index.wxml-->
-<text>pages/message/index.wxml</text>
+<import src="../common/common.wxml" />
+<template is="fly" data="{{text: '校园通知'}}" />
+
+
+<template is="fly" data="{{text: '年级通知'}}" />
+

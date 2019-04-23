@@ -1,0 +1,2 @@
+<!--pages/student/score/score.wxml-->
+<view>学生{{label}}的考试成绩</view>

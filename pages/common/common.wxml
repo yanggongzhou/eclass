@@ -2,3 +2,11 @@
 <template name="comm_temp">
     <text>template-模板</text>
 </template>
+
+<template name="fly">
+  <view class="clearfix work-content">
+    <view class="work-line left"></view>
+    <view class="left work-text">{{text}}</view>
+    <view class="work-line right"></view>
+  </view>
+</template>

@@ -1,5 +1,7 @@
 <!--pages/myself/index.wxml-->
-<view class="index-title">校园一隅</view>
+<import src="../common/common.wxml" />
+<template is="fly" data="{{text: '校园一隅'}}" />
+
 <swiper class="index-swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" 
   indicator-active-color="{{activeColor}}">
   <block wx:for="{{imgUrls}}" wx:key="index">
@@ -12,7 +14,7 @@
 </swiper>
 <view bindtap="more" class="know-more">了解更多</view>
 
-<view  class="index-title">校园实事</view>
+<template is="fly" data="{{text: '校园新闻'}}" />
 <view class="index-centent">
 <view>1·一年级1班小明同学拾金不昧，受到全校的...</view>
 <view>2·家事国事天下事事事关心，风声雨声读书声...</view>

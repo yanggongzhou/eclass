@@ -1,11 +1,8 @@
+
+  <import src="../common/common.wxml" />
+  <template is="fly" data="{{text: '功能'}}" />
+
 <view class="">
-  <view class="clearfix work-content">
-    <view class="work-line left"></view>
-    <view class="left work-text">功能</view>
-    <view class="work-line right"></view>
-  </view>
-  
-  
   <view class="weui-grids">
       <block wx:for="{{works}}" wx:key="index">
           <navigator url="{{item.link}}" class="weui-grid" hover-class="weui-grid_active">
@@ -14,7 +11,4 @@
           </navigator>
       </block>
   </view>
-
-
- 
 </view>

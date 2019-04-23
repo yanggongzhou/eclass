@@ -87,6 +87,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    student_msg:null
   }
 })

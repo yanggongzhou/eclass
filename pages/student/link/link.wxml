@@ -1,0 +1,23 @@
+<view class="">
+
+  <picker bindchange="chooseunit" value="{{index}}" range="{{units}}">   
+    <view class="weui-cells weui-cells_after-title">
+      <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__bd unit-text">{{unitname}}</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+    </view>
+  </picker>
+
+  <import src="../../common/common.wxml" />
+  <template is="fly" data="{{text: '学生'}}" />
+
+  <view class="weui-grids">
+      <block wx:for="{{students}}" wx:key="index">
+          <view bindtap='studentClick' id="{{item.label}}" class="weui-grid" hover-class="weui-grid_active">
+              <image class="weui-grid__icon" src="{{item.imgUrl}}" />
+              <view class="weui-grid__label">{{item.label}}</view>
+          </view>
+      </block>
+  </view>
+</view>

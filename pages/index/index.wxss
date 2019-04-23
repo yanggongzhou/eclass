@@ -1,4 +1,17 @@
 /* pages/myself/index.wxss */
+.work-line{
+  border-bottom:1px solid #e1e1e1;
+  height: 25rpx;
+  width: 37%;
+}
+.work-content{
+  padding: 20rpx;
+}
+.work-text{
+  width:26%;
+  text-align:center;
+  color:#03a9f4;
+}
 .slide-image {
   width: 100%;
 }
@@ -12,8 +25,9 @@
 .know-more{
   text-align:right;
   padding:40rpx;
-  color:blue;
+  color:#03a9f4;
+  font-size: 24rpx;
 }
 .index-centent{
-  padding:20rpx
+  padding:20rpx;
 }

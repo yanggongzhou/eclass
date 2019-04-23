@@ -1,14 +1,17 @@
-/* pages/message/index.wxss */
+/* pages/student/link/link.wxss */
 .work-line{
   border-bottom:1px solid #e1e1e1;
   height: 25rpx;
-  width: 37%;
+  width: 40%;
 }
 .work-content{
   padding: 20rpx;
 }
 .work-text{
-  width:26%;
+  width:20%;
   text-align:center;
-  color:#03a9f4;
+  color: gray;
+}
+.unit-text{
+  font-size: 26rpx;
 }
