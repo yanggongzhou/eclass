@@ -13,6 +13,7 @@
     "pages/person/clock/clock",
     "pages/person/card/card",
     "pages/person/log/log",
+    "pages/person/help/help",
     "pages/person/aboutus/aboutus",
 
     "pages/message/message",

@@ -56,7 +56,9 @@
         <view>{{item.label}}</view>
         <view>{{item.classroom}}</view>
       </view>
-      <view class="weui-cell__bd checkBox_text center">开机状态：{{item.state}}</view>
+      <view class="weui-cell__bd checkBox_text center">开机状态：
+        <switch checked="{{item.state}}" bindchange="switchChange"/>
+      </view>
     </label>
   </checkbox-group>
 </view>

@@ -12,7 +12,6 @@
     </swiper-item>
   </block>
 </swiper>
-<view bindtap="more" class="know-more">了解更多</view>
 
 <template is="fly" data="{{text: '校园新闻'}}" />
 <view class="index-centent">
@@ -21,5 +20,6 @@
 <view>3·苟利国家生死已，期因祸福避趋之</view>
 <view>4·今年5月1号，同学们想去哪儿玩呀</view>
 <view>5·少小离家老大回，乡音不改鬓毛催</view>
+<view>6·祝全校学生六一儿童节快乐</view>
 <view bindtap="more" class="know-more">了解更多</view>
 </view>

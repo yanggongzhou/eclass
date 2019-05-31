@@ -3,14 +3,17 @@
   width: 150rpx;
   height: 150rpx;
   border-radius:8%;
+  overflow:hidden;
+  margin: 0 auto;
 }
 .wxUsermsg{
   text-align: center;
-  padding:35rpx;
+  padding:50rpx 35rpx 10rpx 35rpx;
 }
 .userinfo-nickname {
   color: #aaa;
-  font-size: 26rpx
+  font-size: 28rpx;
+  margin-top: 20rpx;
 }
 .navIcon{
   margin-right: 5px;vertical-align: middle;width:20px; height: 20px;
@@ -21,4 +24,7 @@
 .aboutusBtn{
   padding:17rpx;
   background-color:#FFF;
+}
+.list-box{
+  margin-top: 20rpx
 }

@@ -21,3 +21,20 @@
   border-radius:2%;
   box-shadow:1rpx 0rpx 7rpx #e1e1e1;
 }
+.urgent{
+  padding:5rpx 40rpx
+}
+.urgent-title{
+  color:#e7834d
+}
+.urgent-date{
+  color: gray;
+  font-size: 24rpx;
+}
+.urgent-text{
+  font-size: 24rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+          

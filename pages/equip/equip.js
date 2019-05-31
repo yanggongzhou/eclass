@@ -67,5 +67,22 @@ Page({
     wx.navigateTo({
       url: './equipoc/equipoc',
     })
-  }
+  },
+  //开关按钮
+  switchChange: function (e) {
+    // console.log('switch 发生 change 事件，携带值为', e)
+    if(!e.detail.value){
+      wx.showToast({
+        title: '关机中',
+        icon: 'loading',
+        duration: 2000
+      });
+    }else{
+      wx.showToast({
+        title: '开机中',
+        icon: 'loading',
+        duration: 2000
+      });
+    }
+  },
 });

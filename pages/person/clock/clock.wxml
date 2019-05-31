@@ -1,2 +1,50 @@
 <!--pages/person/clock/index.wxml-->
-<text>pages/person/clock/index.wxml</text>
+<view class="weui-panel">
+            <view class="weui-panel__hd">考勤签到</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">下班签到成功18：00</view>
+                    <view class="weui-media-box__desc">又是收获满满的一天，您辛苦了<br/>
+                    签到地点：永泰·自在香山
+                    </view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">班次签到时间</view>
+                        <view class="weui-media-box__info__meta">17：30下班</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其他信息</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+<view class="weui-panel">
+            <view class="weui-panel__hd">考勤签到</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">下班签到成功18：00</view>
+                    <view class="weui-media-box__desc">又是收获满满的一天，您辛苦了<br/>
+                    签到地点：永泰·自在香山
+                    </view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">班次签到时间</view>
+                        <view class="weui-media-box__info__meta">17：30下班</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其他信息</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-panel">
+            <view class="weui-panel__hd">考勤签到</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">上班签到成功08：00</view>
+                    <view class="weui-media-box__desc">又是收获满满的一天，您辛苦了<br/>
+                    签到地点：永泰·自在香山
+                    </view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">班次签到时间</view>
+                        <view class="weui-media-box__info__meta">17：30下班</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其他信息</view>
+                    </view>
+                </view>
+            </view>
+        </view>

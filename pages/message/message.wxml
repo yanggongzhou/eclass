@@ -2,10 +2,19 @@
 
 <view class="schoolNotice">
   <template is="fly" data="{{text: '校园通知'}}" /> 
-
+  <view class="urgent">
+    <view class="clearfix">
+      <view class="urgent-title left">紧急通知</view>
+      <view class="urgent-date right">11年11月11号</view>
+    </view>
+   
+    <view class="urgent-text">@.一年级一班王某某同学丢失书包一个，书包颜色为暖色，皮卡丘形状，内含钥匙一枚及书籍若干，望捡到的同学发扬拾金不昧的精神，交于教导楼1层101房间吴老师</view>
+  </view>
+  
 
 </view>
 
+ 
  
 <view class="schoolNotice">
   <template is="fly" data="{{text: '班级圈'}}" />

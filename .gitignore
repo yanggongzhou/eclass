@@ -10,7 +10,7 @@ $RECYCLE.BIN/
 .TemporaryItems
 .Trashes
 
-# Node.js
+.DS_Store
 node_modules/
 /dist/
 npm-debug.log*
